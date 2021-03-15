@@ -89,7 +89,7 @@ You can access the instance using the web interface or via the following termina
 
 **To run the code:**
 
-**1)** Copy all the data in the `data` folder as provided for the hackathon
+**1)** Create a folder `data` and copy all the data as provided for the hackathon
 
 **2)** Navigate to the `suction-challenge-master`
 
