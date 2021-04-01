@@ -1,27 +1,3 @@
-## Welcome to the Nimble AI Programming Challenge
-
-<p align="center">
- <img src="./assets/ur5e.png" width="35%">
-</p>
-
-The goal of this project is develop an algorithm that can predict ideal suctionable areas in cluttered scenes. Suction cups adhere best to flat, smooth and non-porous surfaces -- so something like a sponge wouldn't work since the air would escape from the holes.
-
-<p align="center">
- <img src="./assets/rgb.png" width="35%">
-</p>
-
-For example, in the RGB image above, the green areas indicate locations where a suction cup would have maximal gripping success.
-
-Your goal is to train a model that takes as input an RGB-D (rgb + depth) image and outputs a corresponding affordance map of values between 0 and 1 for each pixel in the input image, where values closer to 1 indicate more favorable locations for suction. These affordance maps should be visualized as heatmaps as shown in the  example below. 
-
-<p align="center">
- <img src="./assets/heatmap.png" width="35%">
-</p>
-
-**Note 1**. You have the liberty of choosing what modality to use: you may choose to work with depth images alone, rgb images alone, or both modalities combined.  You may also pre-process the inputs if you'd like before feeding them to a model. If you do so please elaborate on what you are doing and why it helps with learning.
-
-**Note 2**. We don't want an overly-parameterized network, so try to avoid pretrained Imagenet variants. We prioritize both accuracy (more specifically precision) and runtime. Be mindful of potential class imbalance when training your networks.
-
 ## Given
 
 **1)** We've provided you with an inhouse dataset composed of RGB and Depth images of size `480x640` and their associated labels. Split the data into train and validation sets following standard rules of thumb. 
